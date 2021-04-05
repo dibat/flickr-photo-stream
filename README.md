@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Flickr Photo Stream  React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Setup
+Enter Flickr API Key inside .env:
+
+### `REACT_APP_FLICKR_API_KEY=ENTER_FLICKR_API_KEY_HERE`
 
 ## Available Scripts
 

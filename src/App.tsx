@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { AppBar, Box, Container, Toolbar, Typography } from "@material-ui/core";
+import { InterestingPhotos } from "./components/PhotoStream/";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <AppBar>
+        <Toolbar>
+          <Typography variant={"h5"}>
+            Flickr Photo Stream{" "}
+            <Typography variant={"caption"}>
+              - interesting photos for the most recent day
+            </Typography>
+          </Typography>{" "}
+        </Toolbar>
+      </AppBar>
+      <Toolbar />
+      <Container maxWidth="lg">
+        <Box my={3}>
+          <InterestingPhotos />
+        </Box>
+      </Container>
+    </React.Fragment>
   );
 }
 
